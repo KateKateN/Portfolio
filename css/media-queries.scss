@@ -1,0 +1,306 @@
+@import "styles.scss";
+
+@media screen and (max-width: 1250px) {
+
+   // CONTAINER WITH MAIN INFO
+   .banner-content{
+      width: 80%;
+      padding: 20px;
+      &__info{
+         width: 50%;
+         padding: 20px 20px 20px 40px;
+
+      }
+   }
+
+   // FEEDBACKS SECTION
+   .feedbacks{
+      &__wrapper{
+         width: 100%;
+         grid-template-columns: repeat(5, 300px);
+      }
+      &__container{
+         padding: 20px;
+      }
+   }
+}
+
+@media screen and (max-width: 1100px){
+   // basic styles
+   .content-width{
+      width: 80%;
+   }
+
+   // OFERING TO CLIENTS SECTION
+   .offering{
+      &__containers{
+         margin-top: 50px;
+         .container-wrapper{
+            pointer-events: none;
+         }
+      }
+   }
+
+   // PROJECTS SECTION
+   .project{
+      padding-bottom: 50px;
+      &__container-wrapper{
+         grid-gap: 30px;
+         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      }
+      &__container{
+         margin-bottom: 15px;
+      }
+      &__img{
+         height: 270px;
+      }
+      &__name{
+         font-size: 17px;
+         margin: 15px 0 2px 0;
+      }
+   }
+}
+
+@media screen and (max-width: 900px){
+
+   // MAIN MENU FOR PHONES
+   .main-menu{
+      display: none;
+   }
+   .header-section{
+      background: rgba($color: #000000, $alpha: 0.5);
+   }
+   .main-menu-phone{
+      display: flex;
+   }
+
+   // CONTAINER WITH MAIN INFO
+   .banner-wrapper{
+      padding: 200px 0 50px 0;
+      height: auto;
+   }
+   .banner-content{
+      &__greetings{
+         top: -25px;
+         font-size: 27px;
+         animation: none;
+         .greetings-hello{
+            top: -30px;
+            left: -50px;
+            font-size: 45px;
+            animation: none;
+         }
+      }
+      &__img{
+         display: none;
+      }
+      &__info{
+         width: 100%;
+         box-sizing: border-box;
+         padding: 0;
+      }
+      &__name{
+         font-size: 50px;
+         line-height: 50px;
+         text-align: center;
+      }
+         &__img-phone{
+            display: block;
+            width: 100%;
+            padding: 20px 0;
+            img{
+               width: 100%;
+               border-radius: 15px;
+            }
+         }
+         &__position{
+            font-size: 17px;
+            margin-top: 0px;
+            text-align: center;
+         }
+         &__text{
+            padding: 30px 40px 10px 40px ;
+         }
+         &__contact{
+            padding: 0px 40px 0px 40px ;
+
+         }
+         &__socials{
+            margin: 0 auto;
+            margin-top: 30px;
+         }
+      }
+   
+   // ABOUT ME SECTION 
+   .about-wrapper{
+      padding: 100px 0 100px 0;
+   }
+   
+   // OFERING TO CLIENTS SECTION
+   .offering{
+      &__containers{
+         margin-top: 50px;
+         grid-gap: 25px;
+         grid-template-columns:repeat( auto-fit, 300px );
+         justify-content: center;
+         .container-wrapper{
+            height: auto;
+            background: rgba($color: #ffffff, $alpha: 1);
+            -webkit-box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.1);
+            -moz-box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.1);
+            box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.1);
+            .icon{
+               left: 12%;
+               top: 30%;
+               i{
+                  font-size: 33px;
+                  background: $gradient;
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+               }
+            }
+            .title{
+               top: 10%;
+               font-size: 30px;
+               left: 60%;
+            }
+            .desc{
+               color: $light-text;
+            }
+         }
+      }
+   }
+
+   // FOOTER 
+   .contact{
+      padding-bottom: 40px;
+      &__form{
+         width: 70%;
+         margin-top: 20px;
+      }
+   }
+      
+   // SOCIAL NETWORKS
+   .social-networks{
+      justify-content: center;
+   }
+}
+
+@media screen and (max-width: 600px){
+   //basic styles 
+   .content-width{
+      width: 90%;
+   }
+
+   // EXPERIENCE SECTION
+   .experience{
+      width: 80%;
+      &__content{
+         border: 2px solid rgba($color: #ffffff, $alpha: 0.2);;
+         padding: 0 0 10px 0;
+         flex-direction: column;
+         width: 100%;
+      }
+      &__date{
+         text-align: center;
+         background: rgba($color: #ffffff, $alpha: 0.2);
+         padding: 5px 0;
+         width: 100%;
+         text-transform: uppercase;
+         margin-bottom: 10px;
+         font-size: 12px;
+         word-spacing: 5px;
+         color: #ffffff;
+      }
+   }
+   .time-line{
+      display: none;
+   }
+   .time-line-dot{
+      display: none;
+      &::before{
+         display: none;
+      }
+   }
+}
+
+@media screen and (max-width: 450px){
+
+   // CONTAINER WITH MAIN INFO 
+   .banner-wrapper{
+      padding: 170px 0 50px 0;
+   }
+   .banner-content{
+      width: 95%;
+      border-radius: 0;
+
+      &__greetings{
+         top: -40px;
+         left: 0;
+         font-size: 20px;
+         .greetings-hello{
+            top: -40px;
+            left: 0;
+            font-size: 40px;
+         }
+      }
+      &__name{
+         font-size: 30px;
+      }
+   }
+
+   // ABOUT ME SECTION 
+   .about-wrapper{
+      padding: 50px 0 50px 0;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   }
+   .about{
+      &__achievements{
+         flex-direction: column;
+         .item-container{
+            width: 100%;
+            margin-bottom: 10px;
+         }
+      }
+   }
+
+   // EXPERIENCE SECTION 
+   .experience-wrapper{
+      padding: 50px 0 50px 0;
+   }
+   .experience__btn{
+      margin-bottom: 50px
+   }
+
+   //OFFERING SECTION
+   .offering{
+      padding-bottom: 50px;
+   }
+   .section-desc {
+      width: 100%;
+   }
+
+   //PROJECT SECTION
+   .section-title, .contact__title {
+      padding: 50px 0 15px
+   }
+   .project__nav{
+      width: 90%;
+   }
+   .project__load-btn{
+      margin-top: 50px;
+   }
+
+   //FOOTER
+   .contact{
+      &__form{
+         width: 80%;
+      }
+   }
+
+  // SOCIAL NETWORKS
+   .social-networks{
+      justify-content: space-between;
+      padding: 15px 20px;
+   }
+}
