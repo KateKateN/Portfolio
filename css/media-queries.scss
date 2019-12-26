@@ -231,7 +231,7 @@
       padding: 170px 0 50px 0;
    }
    .banner-content{
-      width: 95%;
+      width: 90%;
       border-radius: 0;
 
       &__greetings{
@@ -247,6 +247,9 @@
       &__name{
          font-size: 30px;
       }
+   }
+   .banner-content__text{
+      padding: 10px ;
    }
 
    // ABOUT ME SECTION 

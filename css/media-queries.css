@@ -458,6 +458,7 @@ a {
   width: 100%;
   height: 10px;
   background: #f0f0f0;
+  overflow: hidden;
 }
 
 .skills__progress-wrapper .progress-base .progress {
@@ -468,8 +469,8 @@ a {
   height: 10px;
   background: -webkit-gradient(linear, left top, right top, from(#776fff), color-stop(#6e7fff), color-stop(#698eff), color-stop(#6a9bff), color-stop(#71a7ff), color-stop(#6bb2ff), color-stop(#6bbdff), color-stop(#71c7ff), color-stop(#6fd3ff), color-stop(#72deff), color-stop(#7be8ff), to(#88f2ff));
   background: linear-gradient(to right, #776fff, #6e7fff, #698eff, #6a9bff, #71a7ff, #6bb2ff, #6bbdff, #71c7ff, #6fd3ff, #72deff, #7be8ff, #88f2ff);
-  -webkit-animation: progress-bar 3s ease-in-out;
-          animation: progress-bar 3s ease-in-out;
+  -webkit-animation: progress-bar .3s ease-in-out;
+          animation: progress-bar .3s ease-in-out;
 }
 
 .skills__progress-wrapper .progress-base .progress-html {
@@ -1467,7 +1468,7 @@ a {
     padding: 170px 0 50px 0;
   }
   .banner-content {
-    width: 95%;
+    width: 90%;
     border-radius: 0;
   }
   .banner-content__greetings {
@@ -1482,6 +1483,9 @@ a {
   }
   .banner-content__name {
     font-size: 30px;
+  }
+  .banner-content__text {
+    padding: 10px;
   }
   .about-wrapper {
     padding: 50px 0 50px 0;
