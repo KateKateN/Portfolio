@@ -1487,6 +1487,9 @@ a {
   .banner-content__text {
     padding: 10px;
   }
+  .banner-content__contact {
+    padding: 0 10px;
+  }
   .about-wrapper {
     padding: 50px 0 50px 0;
     -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
